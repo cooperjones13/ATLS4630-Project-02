@@ -1,1 +1,32 @@
 # ATLS4630-Project-02
+
+
+## Milestone 01 - Project Proposal
+
+### Project Description
+I will be making a portfolio for all my web development projects. I really want this project to not only showcase my past projects but be itself a showcase of the skills I have developed over the past semester. I plan to make my project utilizing Next.js in case I want to utilize the full stack capabilities in the future.
+
+### Project Inspiration
+- [Lando Norris Website](https://landonorris.com/) - Utilizes some crazy 3d rendering and animations to create a unique experience. I'm not expecting to do something on this level by myself during the time frame, but I really love the interactivity.
+- [Kasia Siwosz](https://www.kasiasiwosz.com/) - I love the scroll effects and visual aesthetic. I hope to emulate some of these effects and explore some libraries that help with that.
+- [Swaraj Singh](https://portfolio-25-phi.vercel.app/) - I really love the slight effects that take this simple layout and make it feel more alive and interactive. The parallax effect sells the site as much more impressive and dynamic.
+
+### Wireframe
+My final project might look a good bit different than this but my initial wireframe is very simple with 4 major sections:
+1. Jumbotron/Hero Section - A visually appealing piece of content that catches the eye and invites the user to explore the rest of the page. I'm looking to possibly work with Three.js for this.
+2. Project Section - I have a couple projects that I'm proud enough of to put on my portfolio. I want this section to have small eye catching imagery of each project. Stretch goal would be to have individual pages for each Project
+3. About Section - This section will just contain some information about myself, personal interests, career goals, and technical proficiencies
+4. Contact Section - Includes a classic contact form along with socials (Github, Linkedin, etc.)
+
+![Wireframe Mockup](./Blog/Lofi%20-%20Project%2002.png "Wireframe Mockup")
+
+### Project Goals
+
+- Milestone 2: Prototyping / Proof of Concept
+  - Fairly static layout w/o any fancy animations or anything, static jumbotron section, just my name and a blurb about me
+- Milestone 3: Minimum Viable Product
+  - Dynamic Product, including some parralax effects, scroll effects
+  - Solid visual design, consistent design language, and interesting color palette
+- Stretch Goals
+  - Three.js interactive jumbotron - mouseover effects
+  - Dynamic made pages for projects - possible database integration for the data
