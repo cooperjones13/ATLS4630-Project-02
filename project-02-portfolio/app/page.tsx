@@ -1,23 +1,27 @@
-import Image from "next/image";
+// import Image from "next/image";
+import Jumbotron from './jumbotron'
 
 export default function Home() {
   return (
     <> 
-      <header className="flex flex-row justify-between items-center h-16 px-32">
-        <span>Logo</span>
+      <header className="flex flex-row justify-between items-center h-16 px-16 flex-wrap">
+        <h1>Logo</h1>
         <ul className="flex flex-row justify-end gap-12">
           <li>Projects</li>
           <li>About</li>
           <li>Contact</li>
         </ul>
       </header>
-      <section className="bg-(--green) h-128 w-128 mx-auto flex flex-col justify-center items-center">
-        <span className="font-black">
-          Cooper Jones
-        </span>
-        <span>
-          Front End Web Developer
-        </span>
+      <Jumbotron/>
+      <section className='bg-(--blue)'>
+        <h2>About</h2>
+        <p>Hey im Cooper</p>
+      </section>
+      <section>
+        <h2>Projects</h2>
+      </section>
+      <section>
+        <h2>Contact</h2>
       </section>
     </>
   );
