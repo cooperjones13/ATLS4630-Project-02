@@ -13,14 +13,14 @@ export default function Home() {
         </ul>
       </header>
       <Jumbotron/>
-      <section className='bg-(--blue)'>
+      <section className='bg-(--blue) h-screen'>
         <h2>About</h2>
         <p>Hey im Cooper</p>
       </section>
-      <section>
+      <section className='bg-(--green) h-screen'>
         <h2>Projects</h2>
       </section>
-      <section>
+      <section className='bg-(--yellow) h-screen'>
         <h2>Contact</h2>
       </section>
     </>

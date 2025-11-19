@@ -1,7 +1,7 @@
 'use client';
 
 import {Canvas, useFrame} from '@react-three/fiber'
-import {Icosahedron, OrbitControls} from '@react-three/drei'
+import {Icosahedron, OrbitControls, Wireframe} from '@react-three/drei'
 import { useEffect, useRef } from 'react'
 import * as THREE from "three"
 
@@ -28,15 +28,21 @@ function SpinningIcosahedron(){
         meshRef.current.rotation.y += 0.003;
 
         //Mouse Interaction
-        // meshRef.current.rotation.x += mouse.current.y *0.005;
-        // meshRef.current.rotation.y += mouse.current.x *0.005;
-        meshRef.current.position.x = -mouse.current.x*0.075;
-        meshRef.current.position.y = -mouse.current.y*0.075;
+        meshRef.current.rotation.x += mouse.current.y *0.002;
+        meshRef.current.rotation.y += mouse.current.x *0.002;
+        meshRef.current.position.x = -mouse.current.x*0.05;
+        meshRef.current.position.y = -mouse.current.y*0.05;
     })
 
     return (
         <Icosahedron ref={meshRef} args={[3, 0]}>
-            <meshToonMaterial color="#5e5bff" wireframe/>
+            <meshBasicMaterial color="#272932"  />
+            <Wireframe
+                simplify={false}
+                stroke={"#ffffff"}  // wireframe color
+                thickness={0.05}    // <-- thickness control
+            />
+
         </Icosahedron>
     )
 }
@@ -46,7 +52,7 @@ export default function Jumbotron(){
     return(
         <section className="relative bg-(--background) h-128 w-100p mx-auto">
             <Canvas className='absolute inset-0 z-0' camera={{ position: [0, 0, 15], fov: 25}}>
-                <ambientLight intensity={0.8} />
+                <ambientLight intensity={1} />
                <SpinningIcosahedron/>
             </Canvas>
             <div className='absolute inset-0 z-10 w-100p h-100p flex flex-col justify-center align-center text-center gap-2'>
