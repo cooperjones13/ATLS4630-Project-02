@@ -30,3 +30,14 @@ My final project might look a good bit different than this but my initial wirefr
 - Stretch Goals
   - Three.js interactive jumbotron - mouseover effects
   - Dynamic made pages for projects - possible database integration for the data
+
+## Project Milestone 2
+
+I want to start out this blog post by saying that I'm not quite happy with the amount of progress that I've made on this project thus far. I've started and scrapped several versions of this project up to this point. I tried using some custom components that didn't play nicely with each other and also felt that just utilizing a library felt like a cop out - although I know in a real world project, utilizing prebuilt components is the best way to stay on time and on budget while reducing the amount of bugs. This project, as a portfolio, is a reflection of me and a representation of my skill. So I want to spend some more time fleshing out some of the ideas that I have tried. 
+
+One thing that I am proud of is implementing some 3d graphics using Three.js - I'm not sure if that will be a part of the final result but I'm glad I figured it out.
+
+[Vercel Deployment](https://atls-4630-project-02.vercel.app/)
+
+
+
