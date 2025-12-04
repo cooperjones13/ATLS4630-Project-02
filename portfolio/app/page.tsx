@@ -1,4 +1,5 @@
 import LogoLoop from "@/components/LogoLoop";
+import Project from "@/components/Project";
 import { SiReact, SiNextdotjs, SiTypescript, SiHtml5, SiAdobephotoshop, SiAdobeillustrator, SiTailwindcss, SiNodedotjs} from "react-icons/si";
 
 
@@ -22,7 +23,10 @@ export default function Home() {
       {/* Navbar */}
       <header className="flex flex-row justify-center w-full absolute">
         <div className="flex flex-row justify-between w-full max-w-300 h-20 items-center mx-10">
-          <h1>Cooper Jones</h1>
+          <div className="flex flex-col justify-center items-center">
+            <span>COOPER</span>
+            <span>JONES</span>
+          </div>
           <ul className="flex flex-row gap-4">
             <li>About</li>
             <li>Project</li>
@@ -38,7 +42,7 @@ export default function Home() {
           Let&apos;s Make Cool Sh*t
         </p>
       </section>
-      <section className="flex flex-col h-100 w-full items-center justify-center text-center gap-10 bg-(--accent-darkgreen)">
+      <section className="flex flex-col min-h-100 w-full items-center justify-center text-center gap-10 bg-(--accent-darkgreen) py-15">
         <div className="flex flex-col text-left max-w-300 gap-5 mx-10">
           <h2 className="text-4xl">About Me</h2>
           <p>
@@ -55,11 +59,13 @@ export default function Home() {
           fadeOutColor="#3B5447"
         />
       </section>
-      <section className="flex flex-col h-100 w-full items-center justify-center text-center gap-10 bg-(--background)">
-        <div className="flex flex-col text-left max-w-300 gap-5">
+      <section className="flex flex-col min-h-100 w-full items-center justify-center text-center gap-10 bg-(--background) py-15">
+        <div className="flex flex-col text-left max-w-300 gap-5 mx-10">
           <h2 className="text-4xl">Projects</h2>
-          <div>
-
+          <div className="bg-white flex flex-wrap justify-center gap-10">
+              <Project title="Friends in Low Prices" imgSrc="" id={1}/>
+              <Project title="Friends in Low Prices" imgSrc="" id={2}/>
+              <Project title="Friends in Low Prices" imgSrc=" "id={3}/>
           </div>
         </div>
       </section>
