@@ -3,6 +3,7 @@
 import ContactForm from "@/components/ContactForm";
 import LogoLoop from "@/components/LogoLoop";
 import Project from "@/components/Project";
+import Image from "next/image";
 import Link from "next/link";
 import { RefObject, useRef } from "react";
 import { SiReact, SiNextdotjs, SiTypescript, SiHtml5, SiAdobephotoshop, SiAdobeillustrator, SiTailwindcss, SiNodedotjs, SiLinkedin, SiGithub} from "react-icons/si";
@@ -37,8 +38,7 @@ export default function Home() {
       <header className="flex flex-row justify-center w-full absolute">
         <div className="flex flex-row justify-center md:justify-between w-full max-w-300 h-20 items-center mx-10">
           <div className="hidden flex-col justify-center items-center md:flex">
-            <span className="">COOPER</span>
-            <span className="">JONES</span>
+            <Image src={"/logo-white.png"} alt="Cooper Jones Logo" width={35} height={35}></Image>
           </div>
           <ul className="flex flex-row gap-4">
             <li>

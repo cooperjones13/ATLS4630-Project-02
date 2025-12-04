@@ -24,7 +24,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Cooper Jones",
+  title: "Cooper Jones Portfolio",
   description: "Front-End Software Engineer",
 };
 

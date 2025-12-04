@@ -21,13 +21,15 @@ export default function Project({title, imgSrc, id}:ProjectProps){
                 src={imgSrc}
                 fill
                 alt=""
-                quality={50}
+                quality={70}
+                sizes="100%"
                 className="object-cover blur-sm scale-110"
             />
             <Image 
                 src={imgSrc}
                 fill
                 alt=""
+                sizes="100%"
                 className="object-contain scale-90 hover:scale-95 transition-transform duration-400 drop-shadow-xl/50"
             />
             </div>

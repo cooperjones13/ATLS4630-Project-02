@@ -18,6 +18,7 @@ export default function ContactForm() {
         <input
           name="name"
           placeholder="Your Name"
+          autoComplete="false"
           className="w-full p-2 border rounded bg-(--accent-lightgreen) text-(--background) drop-shadow-sm/50"
           required
         />
@@ -25,6 +26,7 @@ export default function ContactForm() {
           type="email"
           name="email"
           placeholder="Your Email"
+          autoComplete="false"
           className="w-full p-2 border rounded bg-(--accent-lightgreen) text-(--background) drop-shadow-sm/50"
           required
         />
