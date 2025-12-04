@@ -82,7 +82,7 @@ export default function Home() {
         </p>
         <div className="flex flex-row flex-wrap gap-10 justify-center">
           <Link
-              href="https://www.linkedin.com/cooper-jones-dev"
+              href="https://www.linkedin.com/in/cooper-jones-dev/"
               target="_blank" 
               rel="noopener noreferrer"
               className="bg-(--accent-darkgreen) w-50 text-center p-3 flex flex-row justify-center items-center gap-5 text-xl hover:bg-(--accent-lightgreen) transition hover:text-(--accent-darkgreen) rounded-lg drop-shadow-sm/50"
@@ -135,7 +135,7 @@ export default function Home() {
             <ContactForm/>
             <div className="flex flex-col gap-10 justify-around">
               <Link
-              href="https://www.linkedin.com/cooper-jones-dev"
+              href="https://www.linkedin.com/in/cooper-jones-dev/"
               target="_blank" 
               rel="noopener noreferrer"
               className="bg-(--background) w-50 text-center p-3 flex flex-row justify-center items-center gap-5 text-xl hover:bg-(--accent-lightgreen) transition hover:text-(--background) rounded-lg drop-shadow-sm/50"
