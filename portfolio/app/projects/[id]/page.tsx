@@ -1,5 +1,7 @@
 import Image from "next/image"
 import Link from "next/link"
+import { IoOpenOutline } from "react-icons/io5";
+import { SiAdobecreativecloud, SiArduino, SiExpress, SiFigma, SiGithub, SiNextdotjs, SiReact, SiTypescript, SiWordpress } from "react-icons/si";
 
 export default async function ProjectPage(props: PageProps<'/projects/[id]'>){
 
@@ -7,10 +9,91 @@ export default async function ProjectPage(props: PageProps<'/projects/[id]'>){
     const pageData = [
         {
             title: "Friends in Low Prices",
+            subtitle: "Full Stack Web Application",
             id: "1",
             imgSrc: "/filp.png",
-            description: "Our project Friends in Low Prices is a web application made through React/Next.js that facilitates ease for ticket buying and new connections for avid concert goers. Our audience is concert lovers who want to meet new people with similar interests. They prefer to share the concert experience with others, but don’t have friends with the same taste, are new to a city, or struggle to coordinate plans." + '\n' + "Users will have a home page that shows them the options for shows near them and shows for their favorite artists. Once they click on an event, every major platform’s price for the concert will be shown right next to each other. The user then clicks on the link to the platform, buys the tickets, and comes back to the app and interacts with other users’ posts/DMs to find new friends to go to the concert with. It will be clear in the profiles the kind of music users like, what city they are in, and planning with others will be easy with the DM page. Our app will promote connection and budget-friendly fun!"
-
+            imgAlt:"Mock Layout for Application",
+            description: "Our project Friends in Low Prices is a web application made through React/Next.js that facilitates ease for ticket buying and new connections for avid concert goers. Our audience is concert lovers who want to meet new people with similar interests. They prefer to share the concert experience with others, but don’t have friends with the same taste, are new to a city, or struggle to coordinate plans." + '\n' + "Users will have a home page that shows them the options for shows near them and shows for their favorite artists. Once they click on an event, every major platform’s price for the concert will be shown right next to each other. The user then clicks on the link to the platform, buys the tickets, and comes back to the app and interacts with other users’ posts/DMs to find new friends to go to the concert with. It will be clear in the profiles the kind of music users like, what city they are in, and planning with others will be easy with the DM page. Our app will promote connection and budget-friendly fun!",
+            tags: [
+                {
+                    name: "React",
+                    icon: <SiReact />
+                },
+                {
+                    name: "Typescript",
+                    icon: <SiTypescript/>
+                },
+                {
+                    name: "Next.js",
+                    icon: <SiNextdotjs/>
+                }
+            ],
+            links:[
+                {
+                    name:"Github Repo",
+                    icon: <SiGithub/>,
+                    url:""
+                }
+            ]
+        },
+        {
+            title: "Radii",
+            subtitle: "UX Design for Mobile Application",
+            id: "2",
+            imgSrc: "/radii.png",
+            imgAlt:"Mock Layout for Application",
+            description: "",
+            tags: [
+                {
+                    name: "Figma",
+                    icon: <SiFigma />
+                },
+                {
+                    name: "Adobe CC",
+                    icon: <SiAdobecreativecloud />
+                },
+            ],
+            links:[
+                {
+                    name:"Project Blog",
+                    icon: <SiWordpress/>,
+                    url: "https://cooperjonesdesign.wordpress.com/category/capstone/"
+                },
+            ]
+        },
+        {
+            title: "Pastime",
+            subtitle: "Digital Physical Interface",
+            id: "3",
+            imgSrc: "/pastime.png",
+            imgAlt:"Screenshot of web component",
+            description: "My final project for ATLS 3300: Object is a physical interface for viewing team history and statistics on Major League Baseball teams. There is a baseball for each team with their logo or name on it, and embedded in the baseball is an RFID chip, which is read by an RFID reader, so the user is able to scan a baseball and change the team being displayed. There is also a slider for the user to control the season/year being viewed.",
+            tags: [
+                {
+                    name:"React",
+                    icon: <SiReact/>
+                },
+                {
+                    name: "Arduino",
+                    icon: <SiArduino/>
+                },
+                {
+                    name: "Express",
+                    icon: <SiExpress/>
+                }
+            ],
+            links:[
+                {
+                    name:"Github Repo",
+                    icon: <SiGithub/>,
+                    url: "https://github.com/cooperjones13/object-react"
+                },
+                {
+                    name:"Project Blog",
+                    icon: <SiWordpress/>,
+                    url: "https://cooperjonesdesign.wordpress.com/category/object/"
+                },
+            ]
         }
     ]
 
@@ -26,17 +109,40 @@ export default async function ProjectPage(props: PageProps<'/projects/[id]'>){
             <div className="min-h-10 flex justify-center items-center text-xl py-5 bg-(--accent-darkgreen)">
                 <Link href={"/"}>Home</Link>
             </div>
-            <section className="flex flex-row px-10 py-10">
-                <div className="flex flex-col gap-5">
-                    <h1 className="text-2xl">{data.title}</h1>
-                    <p style={{ whiteSpace: "pre-line" }}>{data.description}</p>
+            <section className="flex flex-col justify-center items-center px-10 py-10">
+                <div className="flex flex-row max-w-400 gap-10  flex-wrap justify-center items-start">
+                    <div className="flex flex-col gap-5 max-w-150">
+                        <h1 className="text-3xl font-bold serif tracking-wider">{data.title}</h1>
+                        <strong>{data.subtitle}</strong>
+                        <ul className="flex flex-row gap-5">
+                            {data.tags.map((tag, index)=>
+                                <li key={index} className="flex flex-row justify-center items-center gap-2 bg-(--accent-darkgreen) p-2 rounded-md">
+                                    {tag.icon} {tag.name}
+                                </li>
+                            )}
+                        </ul>
+                        <p style={{ whiteSpace: "pre-line" }}>{data.description}</p>
+                        <div className="flex flex-row gap-5">
+                            {data.links.map((link, index)=>
+                                <Link 
+                                    href = {link.url} 
+                                    target="_blank" 
+                                    rel="noopener noreferrer" 
+                                    key={index} 
+                                    className="flex flex-row justify-center items-center gap-2 bg-(--accent-darkgreen) p-2 rounded-md hover:bg-(--accent-lightgreen) hover:text-(--background)"
+                                    >
+                                    {link.icon} {link.name} <IoOpenOutline/>
+                                </Link>
+                            )}
+                        </div>
+                    </div>
+                    <Image 
+                        src={data.imgSrc}
+                        height={500}
+                        width={500}
+                        alt=""
+                    />
                 </div>
-                <Image 
-                    src={data.imgSrc}
-                    height={500}
-                    width={500}
-                    alt=""
-                />
 
             </section>
         </div>
