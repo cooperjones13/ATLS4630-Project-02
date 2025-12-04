@@ -13,7 +13,7 @@ export default function Project({title, imgSrc, id}:ProjectProps){
     return (
         <Link className="bg-black" href={`/projects/${id}`}>
             <Image 
-                src={null}
+                src={imgSrc}
                 height={500}
                 width={500}
                 alt=""
