@@ -40,4 +40,12 @@ One thing that I am proud of is implementing some 3d graphics using Three.js - I
 [Vercel Deployment](https://atls-4630-project-02.vercel.app/)
 
 
+## Project Milestone 3
+
+I think that making a portfolio has to be one of the toughest creative challenges, I have to figure out MY brand while balancing inevitable scope creep. It's easy for me to want to go overboard and add all the bells and whistles because I want my portfolio to reflect my skill as a developer, but in the end I opted for a more simple version of the portfolio site for this milestone. There isn't too much in the way of interactivity compared to earlier versions of the site. Eventually I want to remedy that and add in some interactive hero element up by name. I don't have all of my Project descriptions, and it would be really cool to include some more photos and videos around these portfolio projects, but I just kept it simple by linking to an already existing blog.
+
+This project taught me how to do dynamic routing using Next.js, how to integrate some prebuilt components, vastly improved my capabilities in Tailwind, and how to create a backend that can actually perform a function besides pulling in data. I really enjoyed this project and want to revisit it in the future, especially as I get closer to graduation in May 2026.
+
+
+[Vercel Deployment](https://atls-4630-project-02.vercel.app/)
 

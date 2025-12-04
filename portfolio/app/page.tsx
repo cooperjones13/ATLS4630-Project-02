@@ -17,14 +17,14 @@ export default function Home() {
     const iconColor = "#ABC4B7"
 
     const techLogos = [
-      { node: <SiReact color={iconColor} className="drop-shadow-md/10 hover"/>, title: "React", href: "https://react.dev" },
-      { node: <SiNextdotjs color={iconColor} className="drop-shadow-md/10"/>, title: "Next.js", href: "https://nextjs.org" },
-      { node: <SiTypescript color={iconColor} className="drop-shadow-md/10"/>, title: "TypeScript", href: "https://www.typescriptlang.org" },
-      { node: <SiHtml5 color={iconColor} className="drop-shadow-md/10"/>, title: "TypeScript", href: "https://www.typescriptlang.org" },
-      { node: <SiAdobephotoshop color={iconColor} className="drop-shadow-md/10"/>, title: "TypeScript", href: "https://www.typescriptlang.org" },
-      { node: <SiAdobeillustrator color={iconColor} className="drop-shadow-md/10"/>, title: "TypeScript", href: "https://www.typescriptlang.org" },
-      { node: <SiTailwindcss color={iconColor} className="drop-shadow-md/10"/>, title: "Tailwind CSS", href: "https://tailwindcss.com" },
-      { node: <SiNodedotjs color={iconColor} className="drop-shadow-md/10"/>, title: "Node.js", href: "https://tailwindcss.com" },
+      { node: <SiReact color={iconColor} tabIndex={-1} className="drop-shadow-md/10 hover"/>, title: "React", href: "https://react.dev" },
+      { node: <SiNextdotjs color={iconColor} tabIndex={-1} className="drop-shadow-md/10"/>, title: "Next.js", href: "https://nextjs.org" },
+      { node: <SiTypescript color={iconColor} tabIndex={-1} className="drop-shadow-md/10"/>, title: "TypeScript", href: "https://www.typescriptlang.org" },
+      { node: <SiHtml5 color={iconColor} tabIndex={-1} className="drop-shadow-md/10"/>, title: "TypeScript", href: "https://www.typescriptlang.org" },
+      { node: <SiAdobephotoshop color={iconColor} tabIndex={-1} className="drop-shadow-md/10"/>, title: "TypeScript", href: "https://www.typescriptlang.org" },
+      { node: <SiAdobeillustrator color={iconColor} tabIndex={-1} className="drop-shadow-md/10"/>, title: "TypeScript", href: "https://www.typescriptlang.org" },
+      { node: <SiTailwindcss color={iconColor} tabIndex={-1} className="drop-shadow-md/10"/>, title: "Tailwind CSS", href: "https://tailwindcss.com" },
+      { node: <SiNodedotjs color={iconColor} tabIndex={-1} className="drop-shadow-md/10"/>, title: "Node.js", href: "https://tailwindcss.com" },
     ];
 
     function smoothScrollTo(divRef: RefObject<HTMLDivElement|null>){
