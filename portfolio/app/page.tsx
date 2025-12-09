@@ -78,7 +78,7 @@ export default function Home() {
           Cooper Jones
         </h2>
         <p className="text-4xl">
-          Let&apos;s Make Cool Sh*t
+          Front End Web Developer
         </p>
         <div className="flex flex-row flex-wrap gap-10 justify-center">
           <Link
