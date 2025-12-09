@@ -13,7 +13,7 @@ export default async function ProjectPage(props: PageProps<'/projects/[id]'>){
             id: "1",
             imgSrc: "/filp.png",
             imgAlt:"Mock Layout for Application",
-            description: "Our project Friends in Low Prices is a web application made through React/Next.js that facilitates ease for ticket buying and new connections for avid concert goers. Our audience is concert lovers who want to meet new people with similar interests. They prefer to share the concert experience with others, but don’t have friends with the same taste, are new to a city, or struggle to coordinate plans." + '\n' + "Users will have a home page that shows them the options for shows near them and shows for their favorite artists. Once they click on an event, every major platform’s price for the concert will be shown right next to each other. The user then clicks on the link to the platform, buys the tickets, and comes back to the app and interacts with other users’ posts/DMs to find new friends to go to the concert with. It will be clear in the profiles the kind of music users like, what city they are in, and planning with others will be easy with the DM page. Our app will promote connection and budget-friendly fun!",
+            description: "Our project Friends in Low Prices is a web application made through React/Next.js that facilitates ease for ticket buying and new connections for avid concert goers. Our audience is concert lovers who want to meet new people with similar interests. They prefer to share the concert experience with others, but don’t have friends with the same taste, are new to a city, or struggle to coordinate plans. \n \n Users will have a home page that shows them the options for shows near them and shows for their favorite artists. Once they click on an event, every major platform’s price for the concert will be shown right next to each other. The user then clicks on the link to the platform, buys the tickets, and comes back to the app and interacts with other users’ posts/DMs to find new friends to go to the concert with. It will be clear in the profiles the kind of music users like, what city they are in, and planning with others will be easy with the DM page. Our app will promote connection and budget-friendly fun! \n \n This project is still in progress but will be completed in May 2026",
             tags: [
                 {
                     name: "React",
@@ -29,11 +29,11 @@ export default async function ProjectPage(props: PageProps<'/projects/[id]'>){
                 }
             ],
             links:[
-                {
-                    name:"Github Repo",
-                    icon: <SiGithub/>,
-                    url:""
-                }
+                // {
+                //     name:"Github Repo",
+                //     icon: <SiGithub/>,
+                //     url:""
+                // }
             ]
         },
         {
@@ -42,7 +42,7 @@ export default async function ProjectPage(props: PageProps<'/projects/[id]'>){
             id: "2",
             imgSrc: "/radii.png",
             imgAlt:"Mock Layout for Application",
-            description: "",
+            description: "Radii is a concept for a social music-sharing and listening app built to make discovering and enjoying music with friends more seamless. Instead of relying on traditional streaming links, Radii creates a space where users can share tracks, explore what others are listening to, and even join real-time listening sessions together. \n \n The design process included user research, iterative interface sketches, and the creation of a high-fidelity Figma prototype focused on three core areas: a personalized music feed, a live listening feature, and a discovery page. To ground the concept in real functionality, I also developed a backend prototype using Node.js and the Spotify API, along with a structured data model for users, tracks, artists, albums, and playlists. \n \n Radii showcases a full product workflow - from identifying a problem in the way people share music to designing intuitive, connected experiences supported by real data integration.",
             tags: [
                 {
                     name: "Figma",
@@ -67,7 +67,7 @@ export default async function ProjectPage(props: PageProps<'/projects/[id]'>){
             id: "3",
             imgSrc: "/pastime.png",
             imgAlt:"Screenshot of web component",
-            description: "My final project for ATLS 3300: Object is a physical interface for viewing team history and statistics on Major League Baseball teams. There is a baseball for each team with their logo or name on it, and embedded in the baseball is an RFID chip, which is read by an RFID reader, so the user is able to scan a baseball and change the team being displayed. There is also a slider for the user to control the season/year being viewed.",
+            description: "Pastime is a physical–digital system for exploring Major League Baseball team history and statistics. Users select a team by scanning a custom baseball embedded with an RFID chip and adjust the season using a sliding potentiometer. Data from the Arduino hardware is sent to an Express.js API, which interprets the inputs and provides the team ID, slider value, and color scheme. A React-based frontend then requests data from the MLB Stats API and updates the display in real time, creating a seamless interactive experience that connects physical interaction with live, API-driven information.",
             tags: [
                 {
                     name:"React",
